@@ -18,10 +18,10 @@ float pixels[AMG88xx_PIXEL_ARRAY_SIZE];
 WebServer server(80);
 WebSocketsServer webSocket = WebSocketsServer(81);
 
-const char* ssid = "Amphibienfahrzeug";
-const char* password = "WasserLand";
+const char* ssid = "Edit here";
+const char* password = "Edit here";
 
-#define AMG8833_SDA 32      // AMG8833 sensor using 13 as SDA and 15 as SCL
+#define AMG8833_SDA 32      // AMG8833 sensor using I2C 32 as SDA and 33 as SCL on AZDelivery V2
 #define AMG8833_SCL 33
 
 void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t length);
